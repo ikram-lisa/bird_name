@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "vite": "^4.4.9"
+  },
+  "name": "items",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy": "surge ./dist items.ikram.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,35 @@
+@use "./base/reset";
+@use "./base/variables" as *;
+@use "./base/fonts";
+@use "./base/mixins" as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  @include regular(2.2rem, 1.2rem, black) //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+;
+}
+
+.panel {
+  width: 45%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+li {
+  background-color: orange;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+#rightList {
+  li {
+    background-color: pink;
+  }
+}
